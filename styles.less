@@ -1,0 +1,513 @@
+@main-color: rgb(0, 0, 0);
+@orange: rgb(249, 132, 41);
+@orange-light: rgb(255, 149, 68);
+@gray: rgb(242, 242, 242);
+@gray-darker: rgb(207, 207, 207);
+@white: rgb(255, 255, 255);
+
+
+@main-color2: rgb(114, 114, 114);
+@light-color: rgb(255, 230, 253);
+@light-color2: rgba(255, 230, 253, 0.575);
+@dark-color: rgb(156, 13, 144);
+@button-sm: rgba(156, 13, 144, 0.4);;
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    color: @main-color;
+}
+
+.logo
+{
+    color: @white;
+    font-weight: 600;
+}
+
+.logo span
+{
+    color: @orange;
+    font-weight: 300;
+}
+
+.underline {
+    width: 60px;
+    border-bottom: 2px solid ;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .underline-a {
+    width: 60px;
+    border-bottom: 2px solid @orange;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+
+.header-name h1
+{
+    font-size: 80px;
+}
+
+.header-name p
+{
+    color: @white;
+}
+
+
+#nav-bar
+{
+    top: 0;
+    z-index: 10;
+}
+
+.navbar
+{
+    background-color: @main-color;
+}
+
+.navbar-brand img
+{
+    height: 40%;
+    width: 40%;
+}
+
+.navbar-nav
+{
+    float:right;
+    padding: 10px;
+
+}
+
+.navbar-toggler
+{
+    align-self: center;
+    justify-content: end;
+    outline: none;
+}
+
+.navbar-nav li
+{
+    padding: 1ch;
+}
+.navbar-nav li a
+{
+    color: @white;
+    font-weight: 600;
+    font-size: medium;
+    float: right;
+    text-align: left;
+}
+.navbar-nav li a:hover
+{
+    color: @orange-light;
+
+}
+.navbar-nav li a:focus
+{
+    color: @orange;
+}
+
+.navbar-toggler i
+{
+    color: @white; 
+}
+
+.navbar-toggler i:hover
+{
+    color: @orange; 
+}
+
+//START
+#start
+{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: @main-color;
+    background: url("images/sunset.jpg")   fixed center;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-color: @main-color;
+    
+}
+
+.header-name
+{
+    text-align: left;
+    color: @white;
+}
+
+.header-name p
+{
+    margin-top: 30px;
+    color: @gray;
+}
+
+.header-name button
+{
+    margin-top: 20px;
+    color: @white;
+    border-color: @white;
+    border-radius: 0%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.header-name button:hover
+{
+    border-color: @orange;
+    background-color: @orange;
+}
+
+.header-name button:focus
+{
+    border-color: @orange;
+    background-color: @orange;
+    box-shadow: 0 0 20px @orange;
+}
+
+.register-form
+{
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: @white;
+    color: @main-color;
+    justify-content: right;
+    align-items: right;
+    width: 420px;
+    position: relative;
+    z-index: 1;
+}
+
+.register-form h3
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    padding: 2ch;
+    background-color: @gray;
+}
+
+.register-form span
+{
+    color: @orange;
+}
+
+.register-form-inputs
+{
+    padding: 35px;
+}
+
+.register-form-inputs input
+{ 
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 2px;
+}
+
+.register-form-inputs input:focus
+{ 
+    box-shadow: 0 0 10px @orange;
+}
+
+.register-button
+{
+    color: @white;
+    font-weight: bold;
+    background-color: @orange-light;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 2ch;
+    align-content: center;
+    border: none;
+}
+
+
+.register-button:hover
+{
+    background-color: @orange;
+}
+
+//SOCIAL MEDIA
+#social-media
+{
+    padding: 10px;
+    color: @main-color;    
+    font-size: 40px;
+    background-color: @white;
+    border-bottom: 3px solid @gray-darker ;
+}
+
+#social-media col-md-5
+{
+    justify-content: left;
+    align-content: center;
+    text-align: center;
+}
+
+
+#social-media col-md-7
+{
+    justify-content: right;
+    align-content: right;
+    text-align: right;
+}
+
+#social-media p
+{
+    font-size: 15px;
+}
+
+#social-media h4
+{
+    font-size: 1.5rem;
+    color: @main-color;    
+    font-weight: bold;
+}
+
+.amedia
+{
+    text-decoration: none;
+    padding: 10px;
+}
+
+#social-media i
+{
+    padding: 15px;
+    display:inline-flexbox;
+    color: @gray-darker;
+}
+
+
+#social-media i:hover
+{
+    color: @orange;
+}
+
+//about
+#about
+{
+    color: @main-color2;
+    padding: 70px;
+    background-color: @gray;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#about .underline-a{
+    text-align: center;
+}
+
+#about i
+{
+    color: @orange;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid @orange;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#about i:hover
+{
+    background-color: @orange;
+    color:@gray;
+}
+#about col-sm-12
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#about col-sm-4
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.desc
+{
+    color: @main-color;    
+}
+
+.about-item
+{
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px;
+    border-color: @dark-color;
+}
+
+//what they say
+
+#what-they-say
+{
+    padding: 70px;
+    background-color: @white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonial {
+    color:#313437;
+  }
+  
+  .testimonial p {
+    color:@main-color2;
+  }
+      
+  .testimonial .people {
+    padding:50px 0 20px;
+    align-items: center;
+  }
+  
+  .testimonial .item {
+    margin-bottom:32px;
+  }
+  
+  .testimonial .item .box {
+    padding:20px 10px;
+    width: 300px;
+    margin-left:10px;
+    margin-right:10px;
+    // margin-right: 30px;
+    background-color: @gray;
+    position:relative;
+  }
+
+  .testimonial .item .box {
+    text-align: left;
+  }
+  
+  .testimonial .item .box:after {
+    content:'';
+    position:absolute;
+    left:40px;
+    bottom:-24px;
+    width:0;
+    height:0;
+    border:15px solid transparent;
+    border-width:12px 15px;
+    border-top-color:@gray;
+    text-align: left;
+  }
+  
+  .author {
+    margin-top:25px;
+    padding-left:25px;
+    text-align: left;
+  }
+  
+  .testimonial .item .name {
+    font-weight:bold;
+    padding-top:10px;
+    margin-bottom:2px;
+    color:inherit;
+  }
+  
+  .testimonial .item .title {
+    font-size:13px;
+    color: @main-color2;
+  }
+    
+  .testimonial .item img {
+    max-width:80px;
+    float:left;
+    margin-right:12px;
+  }
+
+  .testimonial .item .box p{
+    font-style: italic;
+  }
+
+//picture section
+#picture-section{
+    padding-top: 90px;
+    background-color: @white;
+    padding-bottom: 90px;
+}
+
+#picture-section .title-h4{
+    color: @main-color;    
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+#picture-section .tekst{
+    padding-right:  70px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#picture-section p
+{
+    font-size: 15px;
+}
+
+#picture-section .image-col{
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+#picture-section img{
+    width: 450px;
+    box-shadow: 2px 2px 10px @main-color2;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+//footer
+.footer
+{
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: @gray-darker;
+    background-color: @main-color;
+}
+
+.media i
+{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    color: @gray;
+}
+
+.media i:hover
+{
+    color: @orange-light;
+}
